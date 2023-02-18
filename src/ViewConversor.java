@@ -25,15 +25,14 @@ public class ViewConversor extends Moedas {
         }
     }
 
-    public static double verificarValor(String valor) {
+    public static void verificarValor(String valor) {
         try {
             if(valor != null){
-                double number = Double.parseDouble(valor);
+                Double.parseDouble(valor);
             }
         } catch (NumberFormatException ex) {
             JOptionPane.showMessageDialog(null,"Valor Invalido", "Error" ,JOptionPane.ERROR_MESSAGE);
         }
 
-        return 0;
     }
 }
